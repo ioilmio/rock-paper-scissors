@@ -38,3 +38,10 @@ button{
     padding: 15px;
     border-radius: 14px;
 }
+.badge{
+    background-color: indigo;
+    border-radius: 15px;
+    display: inline;
+    margin: 15px;
+    padding: 15px;
+}

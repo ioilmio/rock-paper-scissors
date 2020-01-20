@@ -27,6 +27,7 @@ function win(a, b){
     userScoreEl.innerHTML = userScores;
     cpuScoreEl.innerHTML = cpuScores;
     resultEl.innerHTML = `You choose ${a} cpu choose ${b}, so you win!`;
+    console.log('you win')
 
 }
 function lose(a, b) {
@@ -34,6 +35,7 @@ function lose(a, b) {
     userScoreEl.innerHTML = userScores;
     cpuScoreEl.innerHTML = cpuScores;
     resultEl.innerHTML = `You choose ${a} cpu choose ${b}, so you lose!`;
+    console.log('you lose')
 
 }
 
@@ -42,6 +44,7 @@ function draw(a, b) {
     userScoreEl.innerHTML = userScores;
     cpuScoreEl.innerHTML = cpuScores;
     resultEl.innerHTML = ` Both chooses ${a},it's a draw`;
+    console.log("it's a draw")
    
 }
 
@@ -72,24 +75,26 @@ function game(userChoice){
 function mainGame(){
     rockEl.addEventListener('click', ()=>{
         game('rock');
+        console.log('rock');
     });
 
     paperEl.addEventListener('click', ()=>{
         game('paper');
+        console.log('paper');
     });
 
     scissorsEl.addEventListener('click', ()=>{
         game('scissors');
+        console.log('scissors');
     });
 }
 mainGame();
 
 
-document.getElementById('reset').addEventListener('click',()=>{
-    alert('Your game is going to be restarted')});
+document.getElementById('reset').addEventListener('click',()=>{alert('Your game is going to be restarted');
     //Reset scores
     userScores = 0;
     cpuScores = 0;   
     userScoreEl.innerHTML = userScores;
-    cpuScoreEl.innerHTML = cpuScores;
+    cpuScoreEl.innerHTML = cpuScores;})
 ;
