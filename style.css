@@ -29,19 +29,20 @@ h1{
     align-content: center;
 
 }
-.choices{
-    display: block;
-    justify-content: space-around;
-    align-content: center;
-}
+
 button{
     padding: 15px;
     border-radius: 14px;
 }
+
 .badge{
     background-color: indigo;
     border-radius: 15px;
     display: inline;
     margin: 15px;
     padding: 15px;
+}
+
+.result{
+    display: block;
 }
